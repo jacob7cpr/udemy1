@@ -1,7 +1,10 @@
 [flake8]
 max-line-length = 119
+args: ['--config=setup.cfg', '--ignore=E501']
 exclude =
   migrations,
   __pycache__,
   manage.py,
-  settings.pys
+  settings.pys,
+  /core/migrations/,
+  ./core/migrations/,
